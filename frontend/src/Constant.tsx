@@ -1,1 +1,1 @@
-export const Baseurl = "https://take-assignment-1.onrender.com/api";
+export const Baseurl = "https://take-assignment-2.onrender.com/api";

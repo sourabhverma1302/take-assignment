@@ -98,7 +98,7 @@ const Signin = () => {
           <label className="text-gray-400">Email</label>
           <Input
             className="w-full bg-gray-800"
-            placeholder="arpit@gmail.com"
+            placeholder="sourabh@gmail.com"
             {...register("email")}
           />
           {errors.email && (

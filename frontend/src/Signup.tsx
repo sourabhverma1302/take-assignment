@@ -105,7 +105,7 @@ const Signup = () => {
           <label className="text-gray-400">Name</label>
           <Input
             className="w-full bg-gray-800"
-            placeholder="Arpit"
+            placeholder="Sourabh"
             {...register("name")}
           />
           {errors.name && (
@@ -117,7 +117,7 @@ const Signup = () => {
           <label className="text-gray-400">Email</label>
           <Input
             className="w-full bg-gray-800"
-            placeholder="arpit@gmai.com"
+            placeholder="sourabh@gmai.com"
             {...register("email")}
           />
           {errors.email && (

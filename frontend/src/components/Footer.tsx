@@ -28,24 +28,15 @@ const Footer = () => {
       className=" relative overflow-hidden flex flex-wrap gap-3 items-center  justify-start  mt-4 h-[200px] border rounded-t-xl px-6"
     >
       <div>
-        <h1>Made with ❤️ By Arpit Blagan 🇮🇳</h1>
+        <h1>Made with ❤️ By Sourabh 🇮🇳</h1>
       </div>
       <div>
         <a
-          href="https://github.com/ArpitBlagan"
+          href="https://github.com/sourabhverma1302"
           target="_blank"
           rel="noreferrer"
         >
           <GithubIcon width={50} height={30} />
-        </a>
-      </div>
-      <div>
-        <a
-          href="https://www.linkedin.com/in/arpit-blagan-79081b193/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <LinkedinIcon width={50} height={30} />
         </a>
       </div>
       <div>
