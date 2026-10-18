@@ -62,13 +62,13 @@ const Signup = () => {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const url = await axios.post(`${Baseurl}/upload`, formData);
+      const url = await axios.post(`https://take-assignment.onrender.com/api/upload`, formData);
       console.log("imageUrl", url.data);
       const body = {
         name: data.name,
         email: data.email,
         password: data.password,
-        profileImage: url,
+        profileImage: url.data,
       };
       const res = await axios.post(`${Baseurl}/register`, body);
       console.log(res.data);

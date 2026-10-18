@@ -104,12 +104,13 @@ export const login = async (req: Request, res: Response) => {
       res.status(401).json({ message: "wrong email and password pair" });
     }
   } catch (err) {
-    console.log(err);
+    console.log("error in login", err);
     res.status(500).json({ message: "something went wrong" });
   }
 };
 
 export const register = async (req: Request, res: Response) => {
+  console.log("hello");
   const { name, email, password, profileImage } = req.body;
   try {
     const user = await prisma.user.findFirst({ where: { email: email } });
@@ -128,7 +129,8 @@ export const register = async (req: Request, res: Response) => {
       return res.status(409).json({ message: "email already registered" });
     }
   } catch (err) {
-    res.status(500).json({ message: "something went wrong" });
+    console.log(err);   // add this
+    res.status(500).json({ message: "something went wronggggg" });
   }
 };
 

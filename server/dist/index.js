@@ -21,5 +21,5 @@ app.use((0, cookie_parser_1.default)());
 app.use(express_1.default.json());
 app.use("/api", route_1.router);
 app.listen(process.env.PORT || 9000, () => {
-    console.log(`listening on port ${process.env.PORT}`);
+    console.log(`listening on port 9000`);
 });

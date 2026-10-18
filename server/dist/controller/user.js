@@ -117,12 +117,13 @@ const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         }
     }
     catch (err) {
-        console.log(err);
+        console.log("error in login", err);
         res.status(500).json({ message: "something went wrong" });
     }
 });
 exports.login = login;
 const register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log("hello");
     const { name, email, password, profileImage } = req.body;
     try {
         const user = yield __1.prisma.user.findFirst({ where: { email: email } });
@@ -143,7 +144,8 @@ const register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         }
     }
     catch (err) {
-        res.status(500).json({ message: "something went wrong" });
+        console.log(err); // add this
+        res.status(500).json({ message: "something went wronggggg" });
     }
 });
 exports.register = register;
